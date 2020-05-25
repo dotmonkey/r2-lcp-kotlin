@@ -39,7 +39,7 @@ class Database(context: Context) {
 }
 
 
-class LcpDatabaseOpenHelper(ctx: Context) : ManagedSQLiteOpenHelper(ctx, "lcpdatabase", null, 1) {
+class LcpDatabaseOpenHelper(ctx: Context) : ManagedSQLiteOpenHelper(ctx, ".lcpdatabase", null, 1) {
     companion object {
         private var instance: LcpDatabaseOpenHelper? = null
 
